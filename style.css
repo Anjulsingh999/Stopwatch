@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    user-select: none;
+    box-sizing: border-box;
+    font-family:sans-serif;
+}
+
+#wrapper
+{
+    position: relative;
+}
+
+.container
+{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(background.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.heading{
+    font-size: 3rem;
+    color: white;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.stopwatch_container
+{
+    width:auto;
+    height: auto;
+    /* background-color: antiquewhite; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 3rem;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.922);
+-webkit-backdrop-filter: blur(13px);
+backdrop-filter: blur(13px);
+border: 1px solid rgba(255,255,255,0.4);
+
+}
+
+.stopwatch_btn
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+}
+
+#display_time
+{
+    font-size: 2.8rem;
+}
+
+
+#stop_btn button
+{
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+
+}
+
+#stop_btn button:hover
+{
+    background-color: rgba(0, 0, 0, 0.081);
+}
+
+#start_btn button
+{
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+#start_btn button:hover
+{
+    background-color: rgba(0, 0, 0, 0.081);
+}
+
+#reset_btn button
+{
+    border: 0;
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    text-align: center;
+    outline: none;
+}
+
+#reset_btn button:hover
+{
+    background-color: rgba(0, 0, 0, 0.081);
+}
+
+#play
+{
+    display: block;
+}
+
+#pause
+{
+    display: none;
+    padding: 5px;
+}
+
+
+.bottom_heading
+{
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    background-color: aquamarine;
+    width: 100%;
+    font-weight: 800;
+}
